@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Design portfolio — inspired layout; replace copy and imagery with your own work."
+    />
+    <title>ANGA — Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <div class="preloader" id="preloader" aria-hidden="true">
+      <div class="preloader__inner">
+        <span class="preloader__label">Loading</span>
+        <span class="preloader__pct" id="preloader-pct">1%</span>
+      </div>
+    </div>
+
+    <header class="site-header">
+      <a class="logo" href="#">ANGA</a>
+      <nav class="nav" aria-label="Primary">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero__starfield" aria-hidden="true">
+          <canvas id="starfield-hero"></canvas>
+        </div>
+        <div class="hero__content">
+          <p class="eyebrow reveal">Design portfolio</p>
+          <h1 id="hero-title" class="hero__title reveal">
+            Crafted interfaces<br />
+            <em>for curious brands.</em>
+          </h1>
+          <p class="hero__lede reveal">
+            Replace this hero with your positioning. The layout mirrors a dark,
+            starfield-forward Framer portfolio structure.
+          </p>
+          <div class="hero__actions reveal">
+            <a class="btn btn--primary" href="#work">View work</a>
+            <a class="btn btn--ghost" href="#contact">Let’s talk</a>
+          </div>
+        </div>
+        <p class="hero__corner" aria-hidden="true">1%</p>
+      </section>
+
+      <section id="work" class="section section--work">
+        <div class="section__head reveal">
+          <h2>Selected work</h2>
+          <p>Swap cards for case studies, galleries, or motion pieces.</p>
+        </div>
+        <div class="grid">
+          <article class="card reveal">
+            <div class="card__media" style="--accent: #6ee7ff"></div>
+            <h3>Orbital CRM</h3>
+            <p>Product design · Design system</p>
+          </article>
+          <article class="card reveal">
+            <div class="card__media" style="--accent: #c4b5fd"></div>
+            <h3>Nova Editorial</h3>
+            <p>Art direction · Web</p>
+          </article>
+          <article class="card reveal">
+            <div class="card__media" style="--accent: #fca5a5"></div>
+            <h3>Lumen Pay</h3>
+            <p>UX research · Mobile</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="about" class="section section--about">
+        <div class="about__inner">
+          <div class="about__copy reveal">
+            <h2>About</h2>
+            <p>
+              Use this block for your bio, clients, and tools. Keep it tight:
+              who you help, what you do, and what makes your process different.
+            </p>
+            <ul class="about__list">
+              <li>Brand & digital product</li>
+              <li>Prototyping in Figma / Framer</li>
+              <li>Design systems & handoff</li>
+            </ul>
+          </div>
+          <div class="about__embed reveal" aria-label="Galaxy starfield embed">
+            <canvas id="starfield-embed"></canvas>
+            <span class="embed-badge">Galaxy starfield</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section section--contact">
+        <div class="contact__starfield" aria-hidden="true">
+          <canvas id="starfield-footer"></canvas>
+        </div>
+        <div class="contact__content reveal">
+          <h2>Contact</h2>
+          <p>Open for freelance and collaborative studio work.</p>
+          <a class="btn btn--primary" href="mailto:hello@example.com">hello@example.com</a>
+        </div>
+        <p class="contact__corner" aria-hidden="true">1%</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>© <span id="year"></span> ANGA. All rights reserved.</span>
+      <div class="site-footer__links">
+        <a href="#" rel="noopener">Twitter</a>
+        <a href="#" rel="noopener">LinkedIn</a>
+        <a href="#" rel="noopener">Dribbble</a>
+      </div>
+    </footer>
+
+    <script defer src="./js/starfield.js"></script>
+    <script defer src="./js/main.js"></script>
+  </body>
+</html>
